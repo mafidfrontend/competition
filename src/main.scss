@@ -14,6 +14,7 @@
   --header-description-color: #40201e;
   --title-color: #18063c;
   --description-color: #404040;
+  --authort-color: #38363c;
 }
 
 * {
@@ -122,6 +123,13 @@ header {
         margin: 0 auto;
         border-radius: 40px;
         display: flex;
+        background-color: transparent;
+        border: 1px solid var(--bg-btn-color);
+        color: var(--bg-btn-color);
+        &:hover {
+          background-color: var(--bg-btn-color);
+          color: var(--main-color);
+        }
       }
       .position {
         .mainSvg {
@@ -262,7 +270,7 @@ main {
             font-size: 48px;
             font-weight: 600;
             line-height: 68px;
-            max-width: 568px;
+            width: 568px;
             position: relative;
             z-index: 1;
           }
@@ -451,6 +459,7 @@ main {
           border-radius: 110px;
           width: 470px;
           height: 608px;
+          cursor: pointer;
           h2 {
             font-family: "Inter";
             font-size: 48px;
@@ -507,7 +516,7 @@ main {
           &:hover * {
             color: var(--main-color);
           }
-          &:hover .price *{
+          &:hover .price * {
             color: var(--main-color);
           }
           &:hover {
@@ -532,4 +541,242 @@ main {
       }
     }
   }
+  .partners {
+    .container {
+      @include flex;
+      justify-content: space-between;
+      padding: 120px 420px 80px 76px;
+      gap: 100px;
+      .partnersImages {
+        @include flex;
+        gap: 56px;
+
+        .partnersLeft {
+          @include flex;
+          flex-direction: column;
+          align-items: end;
+          gap: 54px;
+        }
+        .partnersRight {
+          @include flex;
+          flex-direction: column;
+          align-items: start;
+          gap: 59px;
+        }
+      }
+      .aboutPartners {
+        .aboutTitle {
+          position: relative;
+          h2 {
+            font-size: 48px;
+            font-weight: 600;
+            line-height: 70px;
+            color: var(--title-color);
+            position: relative;
+            z-index: 1;
+          }
+          img {
+            position: absolute;
+            top: 30px;
+            left: 160px;
+          }
+        }
+        .aboutPartnersDescription {
+          font-family: Inter;
+          font-size: 18px;
+          font-weight: 400;
+          line-height: 36px;
+          color: var(--description-color);
+          max-width: 471px;
+          margin-top: 24px;
+          margin-bottom: 48px;
+        }
+        button {
+          border: 1px solid var(--bg-btn-color);
+        }
+      }
+    }
+  }
+  .comments {
+    .container {
+      padding: 156px 475px 157px 447px;
+      position: relative;
+      .commentsTitle {
+        position: relative;
+        text-align: center;
+        h2 {
+          position: relative;
+          z-index: 1;
+          color: var(--title-color);
+          font-size: 48px;
+          font-weight: 600;
+          line-height: 70px;
+        }
+        img {
+          position: absolute;
+          top: 52px;
+          left: 442px;
+        }
+      }
+      .commentsDescription {
+        color: var(--description-color);
+        font-family: "Inter";
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 36px;
+        text-align: center;
+        margin-top: 15px;
+        margin-bottom: 60px;
+        opacity: 80%;
+      }
+      .commentsBox {
+        @include flex;
+        gap: 48px;
+        .commentsContent {
+          .comment {
+            color: var(--description-color);
+            opacity: 80%;
+            font-family: "Inter";
+            font-size: 20px;
+            font-weight: 400;
+            line-height: 36px;
+            width: 632px;
+            margin-bottom: 36px;
+          }
+          .author {
+            h3 {
+              font-family: "Inter";
+              font-size: 24px;
+              font-weight: 500;
+              line-height: 24px;
+              color: var(--authort-color);
+            }
+            p {
+              font-family: "Inter";
+              font-size: 18px;
+              font-weight: 500;
+              line-height: 26px;
+              color: var(--authort-color);
+              opacity: 70%;
+              margin-top: 16px;
+              margin-bottom: 28px;
+            }
+          }
+        }
+      }
+      .position {
+        position: absolute;
+      }
+      .emoji {
+        top: 648px;
+        right: 140px;
+        z-index: 1;
+      }
+      .headerStar {
+        bottom: 58px;
+        right: 103px;
+        width: 94px;
+        height: 110px;
+      }
+      .chat {
+        bottom: 116px;
+        left: 232px;
+      }
+      .like {
+        top: 38px;
+        left: 56px;
+        z-index: 1;
+      }
+      .alarmShape {
+        top: 203px;
+        left: 196px;
+      }
+    }
+  }
+  .ads {
+    background-color: var(--header-bg-color);
+    .container {
+      padding: 137px 507px 0 357px;
+      @include flex;
+      justify-content: space-between;
+      gap: 120px;
+      position: relative;
+      .adsContent {
+        width: 559px;
+        .adsTitleContent {
+          position: relative;
+          h3 {
+            font-size: 48px;
+            font-weight: 600;
+            line-height: 70px;
+            color: var(--title-color);
+            position: relative;
+            z-index: 1;
+          }
+          img {
+            position: absolute;
+            top: 42px;
+            left: 240px;
+          }
+        }
+        .adsDescription {
+          margin-top: 24px;
+          margin-bottom: 48px;
+          font-family: "Inter";
+          font-size: 20px;
+          font-weight: 400;
+          line-height: 36px;
+          color: var(--description-color);
+          max-width: 529px;
+          opacity: 80%;
+        }
+        .adsButtons {
+          display: flex;
+          align-items: center;
+          gap: 20px;
+          button {
+            background-color: var(--bg-btn-color);
+            color: var(--main-color);
+            @include flex;
+            border-radius: 40px;
+            gap: 10px;
+            svg {
+              path {
+                fill: var(--main-color);
+              }
+            }
+            &:hover {
+              color: var(--bg-btn-color);
+              border: 1px solid var(--bg-btn-color);
+              background-color: transparent;
+            }
+            &:hover svg path {
+              fill: var(--bg-btn-color);
+            }
+          }
+        }
+      }
+      .position {
+        position: absolute;
+      }
+      .Image1 {
+        left: 0;
+        top: 11px;
+      }
+      .Image2 {
+        bottom: 168px;
+        right: 0;
+      }
+    }
+  }
+}
+
+footer {
+    .container {
+        .footerContent {
+            @include flex;
+            justify-content: space-between;
+            padding: 129px 376px;
+        }
+    }
 }
