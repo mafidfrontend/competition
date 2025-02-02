@@ -772,11 +772,21 @@ main {
 }
 
 footer {
-    .container {
-        .footerContent {
-            @include flex;
-            justify-content: space-between;
-            padding: 129px 376px;
-        }
+  .container {
+    padding: 129px 376px;
+    .footerContent {
+      @include flex;
+      justify-content: space-between;
+      padding-bottom: 61px;
+      border-bottom: 1px solid var(--description-color);
+      ul {
+        @include flex;
+        gap: 20px;
+      }
+      .icons {
+        @include flex;
+        gap: 20px;
+      }
     }
+  }
 }
