@@ -1,0 +1,44 @@
+footer {
+  .container {
+    padding: 129px 376px;
+    .footerContent {
+      @include flex;
+      justify-content: space-between;
+      padding-bottom: 61px;
+      border-bottom: 1px solid #40404020;
+      margin-bottom: 40px;
+      ul {
+        @include flex;
+        gap: 48px;
+        li {
+          a {
+            font-size: 18px;
+            font-weight: 400;
+            line-height: 24px;
+            color: var(--second-color);
+            &:hover {
+              color: var(--bg-btn-color);
+            }
+          }
+        }
+      }
+      .footerLogo {
+        width: 134px;
+        height: 29px;
+      }
+      .icons {
+        @include flex;
+        gap: 44px;
+        svg {
+          cursor: pointer;
+          & path {
+            fill: #18063c;
+          }
+          &:hover path {
+            fill: #5bc17f;
+          }
+        }
+      }
+    }
+  }
+}

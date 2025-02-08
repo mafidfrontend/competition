@@ -1,0 +1,110 @@
+header {
+  background-color: var(--header-bg-color);
+  height: 100vh;
+  nav {
+    .container {
+      @include flex;
+      justify-content: space-between;
+      padding: 40px 375px 0 356px;
+      ul {
+        @include flex;
+        gap: 48px;
+        li {
+          a {
+            font-size: 18px;
+            font-weight: 400;
+            line-height: 24px;
+            color: var(--second-color);
+            &:hover {
+              color: var(--bg-btn-color);
+            }
+          }
+        }
+      }
+    }
+  }
+  .headerContent {
+    margin-top: 220px;
+    .container {
+      position: relative;
+      padding: 0 249px 122px 249px;
+      .headerTitleBox {
+        position: relative;
+        .headTitle {
+          color: var(--second-color);
+          font-size: 64px;
+          font-weight: 700;
+          line-height: 90px;
+          text-align: center;
+          max-width: 800px;
+          margin: 0 auto;
+          margin-bottom: 24px;
+          position: relative;
+          z-index: 1;
+        }
+        img {
+          position: absolute;
+          top: 145px;
+          left: 285px;
+        }
+      }
+      .headerDescription {
+        font-family: "Inter";
+        font-size: 20px;
+        font-weight: 400;
+        line-height: 36px;
+        text-align: center;
+        color: var(--header-description-color);
+        max-width: 595px;
+        margin: 0 auto;
+        padding-bottom: 68px;
+      }
+      button {
+        padding: 24px 40px;
+        margin: 0 auto;
+        border-radius: 40px;
+        display: flex;
+        background-color: transparent;
+        border: 1px solid var(--bg-btn-color);
+        color: var(--bg-btn-color);
+        &:hover {
+          background-color: var(--bg-btn-color);
+          color: var(--main-color);
+        }
+      }
+      .position {
+        .mainSvg {
+          width: 135px;
+          height: 157px;
+          &:nth-child(5) {
+            width: 178px;
+            height: 191px;
+            top: 220px;
+            right: 450px;
+            z-index: 1;
+          }
+        }
+        img {
+          position: absolute;
+          &:nth-child(1) {
+            top: -100px;
+            left: 380px;
+            z-index: 1;
+          }
+          &:nth-child(2) {
+            top: 320px;
+            right: 580px;
+          }
+          &:nth-child(3) {
+            left: 600px;
+            bottom: 0;
+          }
+          &:nth-child(4) {
+            top: -125px;
+            left: 250px;
+          }
+        }
+      }
+    }
+  }
+}

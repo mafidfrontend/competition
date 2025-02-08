@@ -1,0 +1,121 @@
+.logInContent {
+  background: linear-gradient(#0085ff, #003465);
+  height: 100vh;
+  width: 100%;
+  .container {
+    padding: 98px 755px;
+    overflow: hidden;
+    position: relative;
+    .LoginContent {
+      background: #ffa6a6aa;
+      padding: 40px 60px;
+      border-radius: 28px;
+      color: var(--main-color);
+      position: relative;
+      z-index: 1;
+
+      svg {
+        margin-left: 30px;
+      }
+
+      h2 {
+        margin-top: 40px;
+      }
+      form {
+        margin-top: 24px;
+        display: flex;
+        align-items: start;
+        flex-direction: column;
+        gap: 10px;
+        input {
+          border-radius: 5px;
+          padding: 10px;
+          border: 1px solid transparent;
+        }
+      }
+      button {
+        background-color: #003465;
+        width: 98%;
+        margin-top: 24px;
+        margin-bottom: 24px;
+        font-weight: bold;
+        font-size: 20px;
+        color: var(--main-color);
+        border-radius: 7px;
+        &:hover {
+            transform: scale(1.01);
+            opacity: 0.8;
+        }
+        &:active {
+            transform: scale(0.9);
+        }
+      }
+      .continue {
+        display: flex;
+        justify-content: center;
+        color: var(--main-color);
+        margin-bottom: 24px;
+        margin-left: 10px;
+        &:hover {
+            color: #0085ff;
+        }
+      }
+      .continueContent {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 24px;
+        img {
+            cursor: pointer;
+        }
+      }
+      .register {
+        font-weight: 300;
+        font-size: 12px;
+        a {
+            font-weight: bold;
+            color: var(--main-color);
+        }
+      }
+    }
+    .position {
+        position: absolute;
+    }
+    .gr1 {
+        bottom: 122px;
+        right: -31px;
+    }
+    .gr2 {
+        top: 134px;
+        right: 475px;
+    }
+    .gr3 {
+        left: 641px;
+        top: 53px;
+    }
+    .gr5 {
+        top: 372px;
+        left: 505px;
+    }
+    .gr4 {
+        top: 252px;
+        left: 505px;
+    }
+    .gr6 {
+        bottom: 104px;
+        left: 508px;
+    }
+    .gr7 {
+        right: 511px;
+        bottom: 154px;
+    }
+    .gr8 {
+        right: 471px;
+        bottom: 104px;
+    }
+    .gr9 {
+        bottom: 0;
+        left: 0;
+    }
+  }
+}
